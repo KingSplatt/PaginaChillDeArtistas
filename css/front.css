@@ -1,0 +1,227 @@
+body {
+    background-image: url(/imagenes/fondos/fondoprincipal.jpg);
+}
+
+
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #873c97;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+
+    --fuente-principal: 3.8rem; /* TAMBIEN SE UTILIZA PARA PERSONALIZAR OTROS DATOS */
+}
+section .imagen{
+    width: 20%;
+    background-color: black;
+    border-radius: 2%;
+}
+
+.titulo{
+    text-align: center;/*OTRO DETALLITO */
+    color: blueviolet;
+    
+}
+.contenedor{
+    width: 75%;
+    background-color: rgb(123, 90, 153) ;
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    border-radius: 18px;
+}
+
+.contenedor h2{
+    color: wheat;
+}
+
+.artistas a {
+    text-decoration: none;
+    color: wheat;
+}
+.artistas .cro{
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/cro.jpg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+}
+.artistas .barderos{
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/barderos.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    margin: 5%;
+    position: bottom;
+}
+.artistas .frank {
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/frank.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+.frank h2 { /*pendiente cambiar letra en medio de la foto*/
+    
+}
+
+.artistas .gambino {
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/Childish.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+.artistas .dragones {
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/im.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+.artistas .top {
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/top.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+.artistas .gnash {
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/gnash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+.artistas .x {
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/x.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+.artistas .roc {
+    width: 380px;
+    height: 380px;
+    background-image: url(/imagenes/artista/roc.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+
+.botones {
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-decoration:none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 95%;
+    text-align: center;
+ }
+
+ .barra a {
+    display:inline-block;
+    text-align: center;
+    color: wheat;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.barra a:hover {
+    color: blueviolet;
+    background-color: rgba(white, white, white, 0.9); /* pendiente ver sombras*/
+}
+    @media (min-width: 768px) {
+        .barra {
+           flex-direction: row;
+           justify-content: space-between;
+        }
+}
+ @media (min-width: 768px) {
+    .artistas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* El fr divide el ancho de la pantalla en las partes q le indiques */
+        column-gap: 50px;
+      }
+ }
+
+    .artistas a:active{
+    font-size: 12px;
+ }
+
+    .artistas a:hover {
+        display:inline-block;
+        text-align: center;
+        color: blueviolet;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
+ 

@@ -1,0 +1,12 @@
+body {
+    justify-content: center;
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background-color: plum;
+}
+h1:hover{
+    text-transform: uppercase;
+    opacity: 75%;
+    
+}
